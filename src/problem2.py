@@ -3,9 +3,9 @@ Exam 3, problem 2.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Nicholas Snow.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -74,13 +74,20 @@ def shape(n):
     :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
-
+    #Rows
+    for i in range(n,0,-1):
+        for j in range(i):
+            print(n-i+1,end='')
+        print('*',end='')
+        for k in range(n-i):
+            print(k+1,end='')
+        print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
